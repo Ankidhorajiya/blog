@@ -1,0 +1,23 @@
+<div class="container">
+
+<div class="jumbotron">
+<%= form_for @student, html: { multipart: true } do |form| %>
+
+	<div class="field">
+		<%= form.label :name %></br>
+		<%= form.text_field :name %>
+	</div>
+	<div class="field">
+	<%= form.label :photo %></br>
+  <%= form.file_field :photo %>
+  </div>
+  <div>
+  <%= form.label :video %></br>
+  <%= form.file_field :video %>
+  </div>
+  <div class="field">
+  <%= form.submit 'submit'%>
+<% end %>
+</div>
+
+</div>

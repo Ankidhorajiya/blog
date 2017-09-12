@@ -1,0 +1,8 @@
+<% @student.each do|s| %>
+<p>
+	<%= s.name %> | <%= image_tag(s.photo) %> | <%= image_tag(s.video)  %>	
+</p>
+
+
+<% end %>
+<%= link_to 'new form', new_student_path  %>
