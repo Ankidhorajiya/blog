@@ -4,20 +4,22 @@
 <%= form_for @student, html: { multipart: true } do |form| %>
 
 	<div class="field">
-		<%= form.label :name %></br>
+		<%= form.label :Name %></br>
 		<%= form.text_field :name %>
 	</div>
 	<div class="field">
-	<%= form.label :photo %></br>
-  <%= form.file_field :photo %>
-  </div>
-  <div>
-  <%= form.label :video %></br>
-  <%= form.file_field :video %>
+	<%= form.label :Photo %>
+  <%= form.file_field :photo %><br/>
   </div>
   <div class="field">
+  <%= form.label :Video %>
+  <%= form.file_field :video %><br/>
+  </div>
+  <div class="action">
   <%= form.submit 'submit'%>
-<% end %>
-</div>
+  </div>
 
+<% end %>
+
+</div>
 </div>

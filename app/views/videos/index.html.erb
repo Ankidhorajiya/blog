@@ -1,0 +1,8 @@
+<% @videos.each do|s| %>
+<p>
+	<%= s.description %> | <%= video_tag(s.video)  %>	
+</p>
+
+
+<% end %>
+<%= link_to 'new form', new_video_path  %>

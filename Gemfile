@@ -9,7 +9,7 @@ gem 'devise'
 
 
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
-
+gem "paperclip-av-transcoder"
 
 
 gem 'bourbon', '3.0.1'

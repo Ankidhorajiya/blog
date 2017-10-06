@@ -1,8 +1,11 @@
 class StudentsController < ApplicationController
+	
 	def index
 		@student = Student.all
 	end
+	
 	def create
+		p student_params
 		@student = Student.create(student_params)
 
 		if @student.save
@@ -10,16 +13,24 @@ class StudentsController < ApplicationController
 		else
 			render 'new'
 		end
-	end
-	 def show
+	end    
+
+	def show
 		 @student = Student.find(params[:id])	
-	 end
-	 def new 
+	end
+
+ 	def new 
 	 	@student = Student.new
-	 end
+	end
+
+	def edit
+	end
+
 
 	protected
+
 	def student_params
 		params.require(:student).permit(:name, :photo, :video)
 	end
+
 end
