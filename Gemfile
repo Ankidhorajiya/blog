@@ -6,7 +6,7 @@ gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 gem 'devise'
-
+gem 'activeadmin' 
 
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-av-transcoder"
